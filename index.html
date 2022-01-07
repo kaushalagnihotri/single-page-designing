@@ -1,109 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-        body {
-            background-image: linear-gradient(to right,#f03a63,#8345c6);
-        }
-
-.nav {
-           
-  list-style-type: none;
-  text-align: center;
-  margin: 5px;
-  padding: 10px;
-}
-
-.nav li {
-    background-color: yellow;
-  display: inline-block;
-  height: 20px;
-  width: 100px;
-  margin: 10px;
-  padding: 40px;
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+  <title>Document</title>
+
+<style>
+
+body {
+  background: linear-gradient(to right, #f03a63, #8345c6);
+}
+.containerone {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+  padding: 20px;
 }
 
-
-
-.row {
-           
-           list-style-type: none;
-           text-align: center;
-           margin: 5px;
-           padding: 10px;
-         }
-         
-.row li {
-             background-color: white;
-           display: inline-block;
-           height: 20px;
-           width: 100px;
-           margin: 10px;
-           padding: 40px;
-           
-         }
-
-.container {
-  position: relative;
+.tacos, .beers, .wines, .desserts, .reservations {
+  background-color: yellow;
   text-align: center;
-  color: black;
+  border: 10px solid yellow;
+  margin: 20px;
 }
 
-.text-block {
-  position: absolute;
-  bottom: 200px;
-  right: 200px;
-  background-color: black;
-  color: white;
-  padding-right: 20px;
-  padding-left: 20px;
+.containertwo {
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;  
 }
 
+img {
+  width: 100%;
+  height: 90%;
+  border: 5px solid yellow;
+}
 
+#dollor {
+  background-color: yellow;
+  text-align: center; 
+  border: 10px solid yellow;
+  margin: 20px;
+  width: 200%;  
+}
 
-
+.containerthree {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+  padding: 20px;
+}
 </style>
-
-
 </head>
+
 <body>
-    
-    <ul class="nav">
-        <li><h3>Tacos</h3></li>
-        <li><h3>Beers</h3></li>
-        <li><h3>Wines</h3></li>
-        <li><h3>Desserts</h3></li>
-        <li><h3>Reservations</h3></li>
-      
   
-    
-    <div class="container">
-        <img src="https://www.w3schools.com/howto/img_snow_wide.jpg">
-        <div class="text-block">
-            <h4>terry's Taco Joint</h4>
-            <p>preety good Tacos</p>
-          </div></div>
+<div class="containerone">
+  <div class="tacos"><b>Tacos</b></div>
+  <div class="beers"><b>Beers</b></div>
+  <div class="wines"><b>Wines</b></div>
+  <div class="desserts"><b>Desserts</b></div>
+  <div class="reservations"><b>Reservations</b></div>
+</div>
 
+<div class="containertwo">
+  <div class="row">
+    <img src="/images/design.png">
+  </div>
+  <div class="row">
+    <div id="dollor" class="col-s12">
+      <h3>$1.99</h3>
+     </div>
+    <div id="dollor" class="col-s12">
+      <h3>$3.99</h3>
+      </div>
+    </div>
+  </div>
 
+  <div class="containerthree">
+    <div class="tacos"><b>Tacos<br></b>Hello!I am tocos.</div>
+    <div class="beers"><b>Beers<br></b>Hello! I am beer.</div>
+    <div class="wines"><b>Wines<br></b>Hello! I am wine.</div>
+    <div class="desserts"><b>Desserts<br></b>Hello! I am dessert.</div>
+    <div class="reservations"><b>Reservations<br></b>Hello! I am reservations.</div>
+  </div>
 
-<ul class="row">
-        <li><h3>Tacos</h3></li>
-        <li><h3>Beers</h3></li>
-        <li><h3>Wines</h3></li>
-        <li><h3>Music</h3></li>
-        
-      
-        
-        
-      </ul>
-    
-    
 </body>
 </html>
