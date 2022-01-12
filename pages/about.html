@@ -1,108 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-          
-  <title>About</title>
 
-<style>
+    <title>About</title>
 
-body {
-  padding: 0;
-  margin: 0;
-  background: linear-gradient(to right, #f03a63, #8345c6);
-}
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(to right, #f03a63, #8345c6);
+      }
 
-.navbar {
-  background-color: black;
-  text-align: right;
-} 
+      .navbar {
+        background-color: black;
+        text-align: right;
+      }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 0 15px;
-}
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 0 15px;
+      }
 
-section {
-  text-align: center;
-  padding: 10px;
-}
+      section {
+        text-align: center;
+        padding: 10px;
+      }
 
-section h3 {
-  text-align: center;
-  font-size: 20px;
-}
+      section h2 {
+        text-align: center;
+        font-size: 20px;
+      }
 
-.portfolio-grid {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
-  margin: 30px;
-}
+      .portfolio-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        margin: 30px;
+      }
 
-.portfolio-items {
-  background-color: burlywood; 
-  text-align: center;
-  padding: 50px;
-  margin: 10px;
-}
+      .portfolio-items {
+        background-color: burlywood;
+        text-align: center;
+        padding: 50px;
+        margin: 10px;
+      }
 
-.avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid black;
-}
+      .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
 
-footer {
-    position:fixed;
-    bottom:0;
-    left:0;
-    right:0;
-    height:50px;
-    text-align: center;
-}
-
-</style>
-</head>
-<body>
- 
- 
-  <nav class="navbar">
-    <a href="#">Logout</a>
-    <a href="/index.html">Dashboard</a>
+      footer {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/pages/logoutpage.html">Logout</a>
+      <a href="/index.html">Dashboard</a>
     </nav>
 
     <section>
-      <h2>About us</h2>
+      <h2>About Me!</h2>
       <div class="portfolio-grid">
-
-      <div class="portfolio-items">
-          <img src="https://www.w3schools.com/howto/img_avatar.png"  class="avatar">
-          <br>Kaushal kumar<br>+91-9145202861<br>Kaushal.kumar@perficient.com</div>
-          <div class="portfolio-items">
-          <img src="https://www.w3schools.com/howto/img_avatar.png"  class="avatar"><br>Gunjan Jagnade</div><div class="portfolio-items">
-          <img src="https://www.w3schools.com/howto/img_avatar.png"  class="avatar"><br>Gunjan Jagnade</div><div class="portfolio-items">
-          <img src="https://www.w3schools.com/howto/img_avatar.png"  class="avatar"><br>Gunjan Jagnade</div><div class="portfolio-items">
-          <img src="https://www.w3schools.com/howto/img_avatar.png"  class="avatar"><br>Gunjan Jagnade</div><div class="portfolio-items">
-          <img src="https://www.w3schools.com/howto/img_avatar.png"  class="avatar"><br>Gunjan Jagnade</div>
+        <div class="portfolio-items">
+          <img
+            src="https://www.w3schools.com/howto/img_avatar.png"
+            class="avatar"
+          />
+          <br />
+          Kaushal kumar
+          <br />
+          +91-9145202861
+          <br />
+          Kaushal.kumar@perficient.com
+        </div>
       </div>
     </section>
-
 
     <footer>
       <p>©2022 Kaushalkumar. All Rights Reserved.</p>
     </footer>
-  
-
-</body>
+  </body>
 </html>
