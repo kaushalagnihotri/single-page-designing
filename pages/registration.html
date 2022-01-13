@@ -10,94 +10,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
-        body {
-          background: #ABCDEF;
-          font-family: Assistant, sans-serif;
-          display: flex;
-          min-height: 90vh;
-        }
-        .login {
-          color: white;
-          background: #136a8a;
-          background:
-            linear-gradient(to right, #267871, #136a8a);
-          margin: auto;
-          box-shadow:
-            0px 2px 10px rgba(0,0,0,0.2),
-            0px 10px 20px rgba(0,0,0,0.3),
-            0px 30px 60px 1px rgba(0,0,0,0.5);
-          border-radius: 8px;
-          padding: 50px;
-        }
-        .login .head {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .login .head .company {
-          font-size: 2.2em;
-        }
-        .login .msg {
-          text-align: center;
-        }
-        .login .form input[type=text].text {
-          border: none;
-          background: none;
-          box-shadow: 0px 2px 0px 0px white;
-          width: 100%;
-          color: white;
-          font-size: 1em;
-          outline: none;
-        }
-        .login .form .text::placeholder {
-          color: #D3D3D3;
-        }
-        .login .form input[type=password].password {
-          border: none;
-          background: none;
-          box-shadow: 0px 2px 0px 0px white;
-          width: 100%;
-          color: white;
-          font-size: 1em;
-          outline: none;
-          margin-bottom: 20px;
-          margin-top: 20px;
-        }
-        .login .form .password::placeholder {
-          color: #D3D3D3;
-        }
-        .login .form .btn-login {
-          background: none;
-          text-decoration: none;
-          color: white;
-          box-shadow: 0px 0px 0px 2px white;
-          border-radius: 3px;
-          padding: 5px 2em;
-          transition: 0.5s;
-        }
-        .login .form .btn-login:hover {
-          background: black;
-          color: dimgray;
-          transition: 0.5s;
-        }
-        .login .forgot {
-          text-decoration: underline;
-          color: white;
-          float: right;
-        }
-        .login .register {
-            color: white;
-            float: right;
-            text-decoration: underline;
-        }
+      body {
+        background: #abcdef;
+        font-family: Assistant, sans-serif;
+        display: flex;
+        min-height: 90vh;
+      }
+      .login {
+        color: white;
+        background: #136a8a;
+        background: linear-gradient(to right, #267871, #136a8a);
+        margin: auto;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2),
+          0px 10px 20px rgba(0, 0, 0, 0.3), 0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        padding: 50px;
+      }
+      .login .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .login .head .company {
+        font-size: 2.2em;
+      }
+      .login .msg {
+        text-align: center;
+      }
+      .login .form input[type="text"].text {
+        border: none;
+        background: none;
+        box-shadow: 0px 2px 0px 0px white;
+        width: 100%;
+        color: white;
+        font-size: 1em;
+        outline: none;
+      }
 
-        footer {
-          position:fixed;
-          bottom:0;
-          left:0;
-          right:0;
-          height:50px;
-          text-align: center;
+      .login .form input[type="email"].text {
+        border: none;
+        background: none;
+        box-shadow: 0px 2px 0px 0px white;
+        width: 100%;
+        color: white;
+        font-size: 1em;
+        outline: none;
+      }
+
+      .login .form .text::placeholder {
+        color: #d3d3d3;
+      }
+      .login .form input[type="password"].password {
+        border: none;
+        background: none;
+        box-shadow: 0px 2px 0px 0px white;
+        width: 100%;
+        color: white;
+        font-size: 1em;
+        outline: none;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .login .form .password::placeholder {
+        color: #d3d3d3;
+      }
+      .login .form .btn-login {
+        background: none;
+        text-decoration: none;
+        color: white;
+        box-shadow: 0px 0px 0px 2px white;
+        border-radius: 3px;
+        padding: 5px 2em;
+        transition: 0.5s;
+      }
+      .login .form .btn-login:hover {
+        background: black;
+        color: dimgray;
+        transition: 0.5s;
+      }
+      .login .forgot {
+        text-decoration: underline;
+        color: white;
+        float: right;
+      }
+      .login .register {
+        color: white;
+        float: right;
+        text-decoration: underline;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        text-align: center;
       }
     </style>
   </head>
@@ -105,32 +113,66 @@
     <!-- partial:index.partial.html -->
     <section class="login" id="login">
       <div class="head">
-        <h1 class="company">Welcome to Laurel!</h1><br>
+        <h1 class="company">Welcome to Laurel!</h1>
+        <br />
       </div>
       Please fill your details below:
-      
+
       <div class="form">
-        <form>
-          <input
-            type="text"
-            placeholder="username"
-            class="text"
-            id="username"
-            required
-          /><br />
-          <input
-            type="password"
-            placeholder="password"
-            class="password"
-          /><br />
-          <a href="#" class="btn-login" id="do-login">Signup</a>
-          <a href="/pages/forgotpassword.html" class="forgot">Forgot?</a>
-        </form>
+        <input type="text" placeholder="name" class="text" id="name" />
+
+        <br />
+        <br />
+
+        <input type="email" placeholder="email" class="text" id="email" />
+
+        <br />
+
+        <input type="password" placeholder="password" class="password" id="password" /><br />
+
+        <a href="#" class="btn-login" id="do-register">Signup</a>
+
+        <a href="/pages/forgotpassword.html" class="forgot">Forgot?</a>
       </div>
     </section>
 
     <footer>
       <p>©2022 Kaushalkumar. All Rights Reserved.</p>
     </footer>
+
+    <script>
+      function regsiter() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        var data = {
+          name: name,
+          email: email,
+          password: password,
+        };
+
+        fetch("http://localhost:3000/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((resp) => resp.json())
+          .then((res) => {
+            if (res.success) {
+              alert("Registered Successfully");
+              window.location.href = "/pages/login.html";
+            } else {
+              alert(res.message);
+            }
+          });
+      }
+
+      document
+        .getElementById("do-register")
+        .addEventListener("click", regsiter);
+    </script>
   </body>
 </html>

@@ -39,7 +39,7 @@
       .login .msg {
         text-align: center;
       }
-      .login .form input[type="text"].text {
+      .login .form input[type="email"].text {
         border: none;
         background: none;
         box-shadow: 0px 2px 0px 0px white;
@@ -110,11 +110,11 @@
       <br />
       <div class="form">
         <input
-          name="username"
-          type="text"
-          placeholder="username"
+          name="email"
+          type="email"
+          placeholder="email"
           class="text"
-          id="username"
+          id="email"
         /><br />
         <input
           name="password"
@@ -135,7 +135,7 @@
 
     <script>
       function submitLoginForm() {
-        let username = document.getElementById("username").value;
+        let email = document.getElementById("email").value;
         let password = document.getElementById("password").value;
 
         fetch("http://localhost:3000/login", {
@@ -144,14 +144,15 @@
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            username: username,
+            email: email,
             password: password,
           }),
         })
           .then((res) => res.json())
           .then((data) => {
             if (data.success) {
-              window.location.href = "/dashboard";
+              alert("LoggedIn successfully");
+              window.location.href = "/index.html";
             } else {
               alert(data.message);
             }

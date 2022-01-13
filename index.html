@@ -12,7 +12,7 @@
     />
 
 
-    <title>Dashboard</title>
+    <title>About</title>
 
     <style>
       body {
@@ -29,7 +29,7 @@
       .navbar a {
         color: white;
         text-decoration: none;
-        padding: 0 10px;
+        padding: 0 15px;
       }
 
       section {
@@ -37,15 +37,15 @@
         padding: 10px;
       }
 
-      section h3 {
+      section h2 {
         text-align: center;
         font-size: 20px;
       }
 
       .portfolio-grid {
         display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 60px;
         margin: 30px;
       }
@@ -53,8 +53,8 @@
       .portfolio-items {
         background-color: burlywood;
         text-align: center;
-        padding: 80px;
-        margin: 80px;
+        padding: 50px;
+        margin: 10px;
       }
 
       .avatar {
@@ -80,18 +80,19 @@
     </nav>
 
     <section>
-      <h2>Notice Board! </h2>
+      <h2>Notice Board!</h2>
       <div class="portfolio-grid">
         <div class="portfolio-items">
-          <img
-            src="https://www.w3schools.com/howto/img_avatar.png"
-            class="avatar"
-          />
-          <br />Counsellor1
+          
+          <h4 style="color: red;">ATTENTION!</h4>
+          On 20-Jan-2022, there will be a powercut in your society. Please be notified for the same.
+          <br>
+          Thank you!
+          <br/>
+          +91-0987654321
+          <br />
+          mahaelectricity@google.com
         </div>
-
-        
-       
       </div>
     </section>
 
